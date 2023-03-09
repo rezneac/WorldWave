@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Text, View, StyleSheet } from "react-native";
 import { Audio } from "expo-av";
+import RadioStation from "./components/radioStation";
 
 const MainScreen = () => {
   const sound = new Audio.Sound();
@@ -25,8 +26,7 @@ const MainScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Button title="Start" onPress={() => playSound()} />
-      <Button title="Stop" onPress={() => stopSound()} />
+      <RadioStation />
     </View>
   );
 };
@@ -34,7 +34,6 @@ const MainScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
   },

@@ -1,20 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { createAppContainer } from "react-navigation";
+import { createStackNavigator } from "react-navigation-stack";
+import MainScreen from "./src/screen/MainScreen";
+import RadioStation from "./src/screen/components/radioStation";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+const navigator = createStackNavigator(
+  {
+    Main: MainScreen,   
   },
-});
+  {
+    initialRouteName: "Main",
+    defaultNavigationOptions: {
+      title: "WorldWave Radio",
+      headerTintColor: "white",
+      headerStyle: { elevation: 0, backgroundColor: "#122d42" },
+
+      cardStyle: { backgroundColor: "#3e6b89" },
+
+    },
+  }
+);
+
+export default createAppContainer(navigator);
