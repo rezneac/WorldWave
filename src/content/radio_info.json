@@ -1,0 +1,227 @@
+[
+  {
+    "stationName": "HIT FM",
+    "type": "dance, pop",
+    "url": "https://stream.hitfm.md:8443/HitFM"
+  },
+  {
+    "stationName": "RECORD",
+    "type": "dance, pop, top40",
+    "url": "https://air.radiorecord.md/RecordMD"
+  },
+  {
+    "stationName": "Radio Studentus",
+    "type": "pop, talk",
+    "url": "http://radiolive.studentus.md:8000/live"
+  },
+  {
+    "stationName": "Radio Noroc",
+    "type": "pop, folk",
+    "url": "https://storage.voceabasarabiei.md:8001/radionoroc.mp3"
+  },
+  {
+    "stationName": "Radio Plai",
+    "type": "pop, folk",
+    "url": "https://www.radio.md/stream/radioplai"
+  },
+  {
+    "stationName": "Kiss FM",
+    "type": "pop, talk",
+    "url": "https://live.kissfm.md/kissfm.chisinau"
+  },
+  {
+    "stationName": "Diaspora Media",
+    "type": "pop, news, talk, hits",
+    "url": "https://stream.radiojar.com/58ts0hd5hrquv"
+  },
+  {
+    "stationName": "Jurnal FM",
+    "type": "pop, news, talk, top40",
+    "url": "https://audio.jurnalfm.md/lq"
+  },
+  {
+    "stationName": "Megapolis FM",
+    "type": "dance, house, disco, pop, top40",
+    "url": "https://megapolisfm.md:8443/886aac"
+  },
+  {
+    "stationName": "Radio ZUM 1",
+    "type": "pop, top40",
+    "url": "https://streams.radiozum.md/listen/zum1/ZUM1"
+  },
+  {
+    "stationName": "Radio Relax Moldova",
+    "type": "relax, chill-out",
+    "url": "https://stream.hitfm.md:8443/RadioRelax"
+  },
+  {
+    "stationName": "Radio Albena",
+    "type": "pop, news",
+    "url": "https://www.radio.md/stream/radioalbena"
+  },
+  {
+    "stationName": "Новое Радио",
+    "type": "pop, talk, hits",
+    "url": "http://77.89.206.126:7030/live"
+  },
+  {
+    "stationName": "Muz FM",
+    "type": "pop",
+    "url": "https://live.muzfm.md:8000/muzfm"
+  },
+  {
+    "stationName": "Авторадио Молдова",
+    "type": "pop, talk, hits",
+    "url": "http://185.181.229.197:8000/autoradiolive"
+  },
+  {
+    "stationName": "Radio Orhei FM",
+    "type": "pop",
+    "url": "http://178.76.72.235:8008/live"
+  },
+  {
+    "stationName": "Ретро FM",
+    "type": "retro",
+    "url": "https://efir.retrofm.md:8000/retro"
+  },
+  {
+    "stationName": "Maestro FM",
+    "type": "chill-out",
+    "url": "https://www.radio.md/stream/maestrofm"
+  },
+  {
+    "stationName": "Radio 7",
+    "type": "rock, pop, 90s, 80s, 70s, hits",
+    "url": "http://5.32.169.229:8000/?1654143173164"
+  },
+  {
+    "stationName": "Pro FM",
+    "type": "dance, pop",
+    "url": "https://edge126.rcs-rds.ro/profm/profm.mp3"
+  },
+  {
+    "stationName": "Pro DJ Radio",
+    "type": "dance, house, pop",
+    "url": "http://live.prodjradio.net:8050/;"
+  },
+  {
+    "stationName": "Radio Moldova",
+    "type": "news, talk, folk",
+    "url": "https://radiolive.trm.md:8001/hls/actualitati.m3u8"
+  },
+  {
+    "stationName": "Radio BEAT",
+    "type": "r'n'b, pop, top40",
+    "url": "https://ssl.omegahost.ro/9998/stream"
+  },
+  {
+    "stationName": "Радио Алла",
+    "type": "pop, 90s, 80s",
+    "url": "https://stream.hitfm.md:8443/Alla"
+  },
+  {
+    "stationName": "Русское Любимое",
+    "type": "pop, talk, oldies, hits",
+    "url": "http://live.ruradio.md:8000/ruradio"
+  },
+  {
+    "stationName": "Радио Nik FM",
+    "type": "rock, pop",
+    "url": "http://217.19.209.228:8005/;"
+  },
+  {
+    "stationName": "Record Rock",
+    "type": "rock",
+    "url": "https://air.radiorecord.md/rock.aacp"
+  },
+  {
+    "stationName": "Mega HIT",
+    "type": "hits",
+    "url": "http://91.230.214.92:8000/megahit"
+  },
+  {
+    "stationName": "Radio Fresh MD",
+    "type": "pop",
+    "url": "https://stream-46.zeno.fm/ttofovumhg1vv"
+  },
+  {
+    "stationName": "Drive FM",
+    "type": "top40, hits",
+    "url": "http://109.185.236.241:8000/DriveFM192"
+  },
+  {
+    "stationName": "Радио 1 Тирасполь",
+    "type": "news, talk, folk",
+    "url": "https://www.radio.md/stream/radio1tiraspol"
+  },
+  {
+    "stationName": "Radio Pro Mingir",
+    "type": "pop",
+    "url": "http://92.115.109.44:8000/stream"
+  },
+  {
+    "stationName": "OM Radio",
+    "type": "trance, house, ambient, psy, trance, chill-out, instrumental",
+    "url": "https://www.radio.md/stream/omradio"
+  },
+  {
+    "stationName": "Radio Vocea Basarabiei",
+    "type": "folk, ethnic",
+    "url": "https://storage.voceabasarabiei.md:8001/radiovb_aac"
+  },
+  {
+    "stationName": "Eco FM",
+    "type": "rock, pop",
+    "url": "https://astreaming.ecofm.md:8443/stream.aac"
+  },
+  {
+    "stationName": "Radio Aquarelle",
+    "type": "pop, talk, 90s, 80s, hits",
+    "url": "http://93.115.137.75:8000/aquarellefm.mp3"
+  },
+  {
+    "stationName": "LSM Radio",
+    "type": "talk, christian",
+    "url": "https://s5.radio.co/sfff7b7e97/listen"
+  },
+  {
+    "stationName": "Radio Logos",
+    "type": "talk, christian, gospel",
+    "url": "http://asculta.logos.md:10000/live"
+  },
+  {
+    "stationName": "Radio ONE",
+    "type": "rock",
+    "url": "http://live.muzfm.md:8000/r1"
+  },
+  {
+    "stationName": "GAGAUZRADIOSU",
+    "type": "pop, folk",
+    "url": "https://a1.radioheart.ru:9001/gagauzradiosu"
+  },
+  {
+    "stationName": "Europa Plus Moldova",
+    "type": "pop, top40, hits",
+    "url": "http://217.26.167.180:8081/broadwave.mp3"
+  },
+  {
+    "stationName": "MONKEY.FM",
+    "type": "rock, metal, alternative",
+    "url": "https://monkey.fm:8001/live"
+  },
+  {
+    "stationName": "Publika FM",
+    "type": "news, talk",
+    "url": "https://www.publika.md/live"
+  },
+  {
+    "stationName": "7SSR Dance",
+    "type": "dance",
+    "url": "http://5.32.169.230:8007/"
+  },
+  {
+    "stationName": "Русское Радио Молдова",
+    "type": "pop, hits",
+    "url": "https://cors.bitwize.com.lb/http://live.ruradio.md:8000/ruradio"
+  }
+]

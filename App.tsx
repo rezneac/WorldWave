@@ -1,7 +1,7 @@
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import MainScreen from "./src/screen/MainScreen";
-import RadioStation from "./src/screen/components/radioStation";
+import RadioStation from "./src/components/radioStation";
 
 const navigator = createStackNavigator(
   {

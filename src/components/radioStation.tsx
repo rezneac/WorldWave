@@ -1,16 +1,16 @@
 import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 
-const radioStation = () => {
+const radioStation = (prop: any) => {
   return (
     <View style={styles.mainView}>
       <View style={styles.stationView}>
         <View style={styles.imageView}>
-          <Image source={require("../../../assets/favicon.png")} />
+          <Image source={require("../../assets/favicon.png")} />
         </View>
 
         <View style={styles.stationNameView}>
-          <Text>Radio Station Name</Text>
+          <Text>{prop.details[prop.index].stationName}</Text>
         </View>
       </View>
     </View>
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     flex: 1,
     borderBottomStartRadius: 3.5,
     borderBottomEndRadius: 3.5,
-    opacity:50
+    opacity: 50,
   },
   imageView: {
     height: 53,

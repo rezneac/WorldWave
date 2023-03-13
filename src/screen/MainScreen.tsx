@@ -1,14 +1,23 @@
 import React from "react";
-import { Button, Text, View, StyleSheet } from "react-native";
+import {
+  Button,
+  Text,
+  View,
+  StyleSheet,
+  FlatList,
+  TouchableOpacity,
+} from "react-native";
 import { Audio } from "expo-av";
-import RadioStation from "./components/radioStation";
+import RadioStation from "../components/radioStation";
 
 const MainScreen = () => {
   const sound = new Audio.Sound();
 
-  async function playSound() {
+  const radioStation = require("../content/radio_info.json");
+
+  async function playSound(uri: string) {
     try {
-      await sound.loadAsync({ uri: "https://stream.hitfm.md:8443/HitFM" });
+      await sound.loadAsync({ uri });
       await sound.playAsync();
     } catch (error) {
       console.log("Error loading or playing sound", error);
@@ -28,7 +37,19 @@ const MainScreen = () => {
     <View style={styles.container}>
       {/* <Button title="Start" onPress={() => playSound()} />
       <Button title="Stop" onPress={() => stopSound()} /> */}
-      <RadioStation/>
+      <FlatList
+        data={radioStation}
+        keyExtractor={(item) => item.stationName}
+        renderItem={({ item, index }) => {
+          return (
+            <TouchableOpacity
+              onPress={() => playSound(radioStation[index].url)}
+            >
+              <RadioStation details={radioStation} index={index} />
+            </TouchableOpacity>
+          );
+        }}
+      />
     </View>
   );
 };
