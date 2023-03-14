@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Button,
-  Text,
-  View,
-  StyleSheet,
-  FlatList,
-  TouchableOpacity,
-} from "react-native";
+import { View, StyleSheet, FlatList, TouchableOpacity } from "react-native";
 import { Audio } from "expo-av";
 import RadioStation from "../components/radioStation";
 
@@ -35,17 +28,20 @@ const MainScreen = () => {
 
   return (
     <View style={styles.container}>
-      {/* <Button title="Start" onPress={() => playSound()} />
-      <Button title="Stop" onPress={() => stopSound()} /> */}
+
+      {/* Displays list of radio stations */}
       <FlatList
         data={radioStation}
         keyExtractor={(item) => item.stationName}
+        numColumns={3}
         renderItem={({ item, index }) => {
           return (
             <TouchableOpacity
               onPress={() => playSound(radioStation[index].url)}
             >
-              <RadioStation details={radioStation} index={index} />
+              <View style={styles.radioStationView}>
+                <RadioStation details={radioStation} index={index} />
+              </View>
             </TouchableOpacity>
           );
         }}
@@ -60,6 +56,9 @@ const styles = StyleSheet.create({
     // backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+  },
+  radioStationView: {
+    margin: 10,
   },
 });
 

@@ -1,227 +1,237 @@
 [
   {
     "stationName": "HIT FM",
-    "type": "dance, pop",
-    "url": "https://stream.hitfm.md:8443/HitFM"
+    "url": "https://stream.hitfm.md:8443/HitFM",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/0/360.v16.png"
   },
   {
     "stationName": "RECORD",
-    "type": "dance, pop, top40",
-    "url": "https://air.radiorecord.md/RecordMD"
+    "url": "https://air.radiorecord.md/RecordMD",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/3/106673.v31.png"
   },
   {
     "stationName": "Radio Studentus",
-    "type": "pop, talk",
-    "url": "http://radiolive.studentus.md:8000/live"
-  },
-  {
-    "stationName": "Radio Noroc",
-    "type": "pop, folk",
-    "url": "https://storage.voceabasarabiei.md:8001/radionoroc.mp3"
+    "url": "https://onlineradiobox.com/json/md/studentus/play?platform=web",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/9/68179.v6.png"
   },
   {
     "stationName": "Radio Plai",
-    "type": "pop, folk",
-    "url": "https://www.radio.md/stream/radioplai"
+    "url": "https://www.radio.md/stream/radioplai",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/8/73188.v6.png"
   },
   {
     "stationName": "Kiss FM",
-    "type": "pop, talk",
-    "url": "https://live.kissfm.md/kissfm.chisinau"
+    "url": "https://live.kissfm.md/kissfm.chisinau",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/8/1038.v10.png"
+  },
+  {
+    "stationName": "Radio Noroc",
+    "url": "https://storage.voceabasarabiei.md:8001/radionoroc.mp3",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/0/1020.v8.png"
   },
   {
     "stationName": "Diaspora Media",
-    "type": "pop, news, talk, hits",
-    "url": "https://stream.radiojar.com/58ts0hd5hrquv"
+    "url": "https://stream.radiojar.com/58ts0hd5hrquv",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/0/81790.v8.png"
   },
   {
     "stationName": "Jurnal FM",
-    "type": "pop, news, talk, top40",
-    "url": "https://audio.jurnalfm.md/lq"
-  },
-  {
-    "stationName": "Megapolis FM",
-    "type": "dance, house, disco, pop, top40",
-    "url": "https://megapolisfm.md:8443/886aac"
+    "url": "https://audio.jurnalfm.md/lq",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/1/931.v6.png"
   },
   {
     "stationName": "Radio ZUM 1",
-    "type": "pop, top40",
-    "url": "https://streams.radiozum.md/listen/zum1/ZUM1"
-  },
-  {
-    "stationName": "Radio Relax Moldova",
-    "type": "relax, chill-out",
-    "url": "https://stream.hitfm.md:8443/RadioRelax"
-  },
-  {
-    "stationName": "Radio Albena",
-    "type": "pop, news",
-    "url": "https://www.radio.md/stream/radioalbena"
-  },
-  {
-    "stationName": "Новое Радио",
-    "type": "pop, talk, hits",
-    "url": "http://77.89.206.126:7030/live"
-  },
-  {
-    "stationName": "Muz FM",
-    "type": "pop",
-    "url": "https://live.muzfm.md:8000/muzfm"
-  },
-  {
-    "stationName": "Авторадио Молдова",
-    "type": "pop, talk, hits",
-    "url": "http://185.181.229.197:8000/autoradiolive"
-  },
-  {
-    "stationName": "Radio Orhei FM",
-    "type": "pop",
-    "url": "http://178.76.72.235:8008/live"
-  },
-  {
-    "stationName": "Ретро FM",
-    "type": "retro",
-    "url": "https://efir.retrofm.md:8000/retro"
-  },
-  {
-    "stationName": "Maestro FM",
-    "type": "chill-out",
-    "url": "https://www.radio.md/stream/maestrofm"
-  },
-  {
-    "stationName": "Radio 7",
-    "type": "rock, pop, 90s, 80s, 70s, hits",
-    "url": "http://5.32.169.229:8000/?1654143173164"
-  },
-  {
-    "stationName": "Pro FM",
-    "type": "dance, pop",
-    "url": "https://edge126.rcs-rds.ro/profm/profm.mp3"
-  },
-  {
-    "stationName": "Pro DJ Radio",
-    "type": "dance, house, pop",
-    "url": "http://live.prodjradio.net:8050/;"
-  },
-  {
-    "stationName": "Radio Moldova",
-    "type": "news, talk, folk",
-    "url": "https://radiolive.trm.md:8001/hls/actualitati.m3u8"
-  },
-  {
-    "stationName": "Radio BEAT",
-    "type": "r'n'b, pop, top40",
-    "url": "https://ssl.omegahost.ro/9998/stream"
-  },
-  {
-    "stationName": "Радио Алла",
-    "type": "pop, 90s, 80s",
-    "url": "https://stream.hitfm.md:8443/Alla"
+    "url": "https://streams.radiozum.md/listen/zum1/ZUM1",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/0/1040.v11.png"
   },
   {
     "stationName": "Русское Любимое",
-    "type": "pop, talk, oldies, hits",
-    "url": "http://live.ruradio.md:8000/ruradio"
+    "url": "https://onlineradiobox.com/json/md/1037rusradiomold/play?platform=web",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/6/936.v8.png"
   },
   {
-    "stationName": "Радио Nik FM",
-    "type": "rock, pop",
-    "url": "http://217.19.209.228:8005/;"
+    "stationName": "Megapolis FM",
+    "url": "https://megapolisfm.md:8443/886aac",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/8/88728.v7.png"
   },
   {
-    "stationName": "Record Rock",
-    "type": "rock",
-    "url": "https://air.radiorecord.md/rock.aacp"
+    "stationName": "Radio Relax Moldova",
+    "url": "https://stream.hitfm.md:8443/RadioRelax",
+    "radioimg": "http://cdn.onlineradiobox.com/img/logo/8/116538.png"
   },
   {
-    "stationName": "Mega HIT",
-    "type": "hits",
-    "url": "http://91.230.214.92:8000/megahit"
+    "stationName": "Muz FM",
+    "url": "https://live.muzfm.md:8000/muzfm",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/5/935.v8.png"
   },
   {
-    "stationName": "Radio Fresh MD",
-    "type": "pop",
-    "url": "https://stream-46.zeno.fm/ttofovumhg1vv"
+    "stationName": "Radio Albena",
+    "url": "https://www.radio.md/stream/radioalbena",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/2/952.v6.png"
+  },
+  {
+    "stationName": "Авторадио Молдова",
+    "url": "https://onlineradiobox.com/json/md/auto/play?platform=web",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/4/83754.v3.png"
+  },
+  {
+    "stationName": "Ретро FM",
+    "url": "https://efir.retrofm.md:8000/retro",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/5/92305.v8.png"
+  },
+  {
+    "stationName": "Новое Радио",
+    "url": "https://onlineradiobox.com/json/md/novoeradiomd/play?platform=web",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/8/66878.v7.png"
+  },
+  {
+    "stationName": "Radio Orhei FM 97.5",
+    "url": "https://onlineradiobox.com/json/md/orhei/play?platform=web",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/6/83896.v6.png"
+  },
+  {
+    "stationName": "Maestro FM",
+    "url": "https://www.radio.md/stream/maestrofm",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/0/950.v5.png"
+  },
+  {
+    "stationName": "Pro FM",
+    "url": "https://edge126.rcs-rds.ro/profm/profm.mp3",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/1/1021.v4.png"
+  },
+  {
+    "stationName": "Radio 7",
+    "url": "https://onlineradiobox.com/json/md/radio71052/play?platform=web",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/8/958.v12.png"
+  },
+  {
+    "stationName": "PRO Dj Radio",
+    "url": "https://onlineradiobox.com/json/md/prodj/play?platform=web",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/5/79545.v6.png"
+  },
+  {
+    "stationName": "Radio BEAT",
+    "url": "https://ssl.omegahost.ro/9998/stream",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/3/1043.v10.png"
+  },
+  {
+    "stationName": "Radio Moldova",
+    "url": "https://radiolive.trm.md:8001/hls/actualitati.m3u8",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/8/938.v8.png"
   },
   {
     "stationName": "Drive FM",
-    "type": "top40, hits",
-    "url": "http://109.185.236.241:8000/DriveFM192"
+    "url": "https://onlineradiobox.com/json/md/drivefm/play?platform=web",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/9/116539.v3.png"
   },
   {
-    "stationName": "Радио 1 Тирасполь",
-    "type": "news, talk, folk",
-    "url": "https://www.radio.md/stream/radio1tiraspol"
+    "stationName": "Радио Алла",
+    "url": "https://stream.hitfm.md:8443/Alla",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/4/934.v4.png"
   },
   {
-    "stationName": "Radio Pro Mingir",
-    "type": "pop",
-    "url": "http://92.115.109.44:8000/stream"
+    "stationName": "Mega HIT",
+    "url": "https://onlineradiobox.com/json/md/megahit/play?platform=web",
+    "radioimg": "http://cdn.onlineradiobox.com/img/logo/0/116540.png"
+  },
+  {
+    "stationName": "Радио Nik FM",
+    "url": "https://onlineradiobox.com/json/md/radionikfm/play?platform=web",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/2/1022.v5.png"
   },
   {
     "stationName": "OM Radio",
-    "type": "trance, house, ambient, psy, trance, chill-out, instrumental",
-    "url": "https://www.radio.md/stream/omradio"
-  },
-  {
-    "stationName": "Radio Vocea Basarabiei",
-    "type": "folk, ethnic",
-    "url": "https://storage.voceabasarabiei.md:8001/radiovb_aac"
+    "url": "https://www.radio.md/stream/omradio",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/5/70725.v9.png"
   },
   {
     "stationName": "Eco FM",
-    "type": "rock, pop",
-    "url": "https://astreaming.ecofm.md:8443/stream.aac"
+    "url": "https://astreaming.ecofm.md:8443/stream.aac",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/3/1023.v6.png"
+  },
+  {
+    "stationName": "Радио 1 Тирасполь",
+    "url": "https://www.radio.md/stream/radio1tiraspol",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/5/1045.v4.png"
+  },
+  {
+    "stationName": "Radio Pro Mingir",
+    "url": "https://onlineradiobox.com/json/md/promingir/play?platform=web",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/1/68871.v9.png"
   },
   {
     "stationName": "Radio Aquarelle",
-    "type": "pop, talk, 90s, 80s, hits",
-    "url": "http://93.115.137.75:8000/aquarellefm.mp3"
+    "url": "https://onlineradiobox.com/json/md/aquarelle/play?platform=web",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/5/60715.v10.png"
+  },
+  {
+    "stationName": "Record Rock",
+    "url": "https://air.radiorecord.md/rock.aacp",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/6/123166.v4.png"
   },
   {
     "stationName": "LSM Radio",
-    "type": "talk, christian",
-    "url": "https://s5.radio.co/sfff7b7e97/listen"
+    "url": "https://s5.radio.co/sfff7b7e97/listen",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/9/949.v3.png"
   },
   {
-    "stationName": "Radio Logos",
-    "type": "talk, christian, gospel",
-    "url": "http://asculta.logos.md:10000/live"
+    "stationName": "Radio Vocea Basarabiei",
+    "url": "https://storage.voceabasarabiei.md:8001/radiovb_aac",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/9/1039.v2.png"
   },
   {
     "stationName": "Radio ONE",
-    "type": "rock",
-    "url": "http://live.muzfm.md:8000/r1"
+    "url": "https://onlineradiobox.com/json/md/one/play?platform=web",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/7/84427.v5.png"
   },
   {
-    "stationName": "GAGAUZRADIOSU",
-    "type": "pop, folk",
-    "url": "https://a1.radioheart.ru:9001/gagauzradiosu"
+    "stationName": "Radio Fresh MD",
+    "url": "https://stream-46.zeno.fm/ttofovumhg1vv",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/3/118463.v2.png"
   },
   {
-    "stationName": "Europa Plus Moldova",
-    "type": "pop, top40, hits",
-    "url": "http://217.26.167.180:8081/broadwave.mp3"
+    "stationName": "Radio Logos",
+    "url": "https://onlineradiobox.com/json/md/radiologos/play?platform=web",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/4/1044.v8.png"
   },
   {
     "stationName": "MONKEY.FM",
-    "type": "rock, metal, alternative",
-    "url": "https://monkey.fm:8001/live"
+    "url": "https://monkey.fm:8001/live",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/5/70035.v11.png"
+  },
+  {
+    "stationName": "Radio Micul Samaritean",
+    "url": "https://s5.radio.co/sfff7b7e97/listen",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/9/34749.v3.png"
+  },
+  {
+    "stationName": "GRT FM (GAGAUZRADIOSU)",
+    "url": "https://a1.radioheart.ru:9001/gagauzradiosu",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/9/109569.v8.png"
+  },
+  {
+    "stationName": "Europa Plus Moldova",
+    "url": "http://217.26.167.180:8081/broadwave.mp3",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/8/92308.v2.png"
   },
   {
     "stationName": "Publika FM",
-    "type": "news, talk",
-    "url": "https://www.publika.md/live"
+    "url": "https://www.publika.md/live",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/0/51180.v5.png"
   },
   {
     "stationName": "7SSR Dance",
-    "type": "dance",
-    "url": "http://5.32.169.230:8007/"
+    "url": "https://onlineradiobox.com/json/md/7ssrdance/play?platform=web",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/1/94001.v6.png"
   },
   {
     "stationName": "Русское Радио Молдова",
-    "type": "pop, hits",
-    "url": "https://cors.bitwize.com.lb/http://live.ruradio.md:8000/ruradio"
+    "url": "https://cors.bitwize.com.lb/http://live.ruradio.md:8000/ruradio",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/1/119771.v3.png"
+  },
+  {
+    "stationName": "Radio Vocea Sperantei",
+    "url": "https://onlineradiobox.com/json/md/voceasperantei/play?platform=web",
+    "radioimg": "http://cdn.onlineradiobox.com/img/l/1/116541.v2.png"
   }
 ]

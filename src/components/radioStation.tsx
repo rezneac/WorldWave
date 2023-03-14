@@ -5,12 +5,19 @@ const radioStation = (prop: any) => {
   return (
     <View style={styles.mainView}>
       <View style={styles.stationView}>
+        {/* Displays radio station image */}
         <View style={styles.imageView}>
-          <Image source={require("../../assets/favicon.png")} />
+          <Image
+            style={styles.image}
+            source={{ uri: prop.details[prop.index].radioimg }}
+          />
         </View>
 
+        {/* Displays radio station name */}
         <View style={styles.stationNameView}>
-          <Text>{prop.details[prop.index].stationName}</Text>
+          <Text numberOfLines={1} ellipsizeMode="tail">
+            {prop.details[prop.index].stationName}
+          </Text>
         </View>
       </View>
     </View>
@@ -18,6 +25,10 @@ const radioStation = (prop: any) => {
 };
 
 const styles = StyleSheet.create({
+  image: {
+    width: 100,
+    height: 53.13,
+  },
   mainView: {
     height: 120,
     width: 100,
