@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { View, StyleSheet, FlatList, TouchableOpacity } from "react-native";
 import { Audio } from "expo-av";
 import RadioStation from "../components/radioStation";
 
 const MainScreen = () => {
-  const [SwitchMode, SetSwitchMode] = useState(false);
   const sound = new Audio.Sound();
 
   const radioStation = require("../content/radio_info.json");
@@ -12,6 +11,13 @@ const MainScreen = () => {
   async function manageSound(uri: string) {
     try {
       if (!sound._loaded) {
+        await Audio.setAudioModeAsync({
+          allowsRecordingIOS: false,
+          staysActiveInBackground: true,
+          playsInSilentModeIOS: true,
+          shouldDuckAndroid: true,
+          playThroughEarpieceAndroid: false
+      });
         await sound.loadAsync({ uri });
         await sound.playAsync();
       } else {

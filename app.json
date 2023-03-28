@@ -12,7 +12,8 @@
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/923d0e9d-be64-45f0-8b0a-6916abb6af1d"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -24,10 +25,19 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.rezneacanatolie.WorldWave"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "923d0e9d-be64-45f0-8b0a-6916abb6af1d"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
     }
   }
 }
