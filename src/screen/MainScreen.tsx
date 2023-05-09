@@ -3,8 +3,6 @@ import {View, StyleSheet, FlatList, TouchableOpacity} from 'react-native';
 import RadioStation from '../components/UI/RadioStation';
 import PlayerManagerMenu from '../components/UI/BottomMenu';
 import {PlayerManager} from '../components/playerManagePlayback/PlayerManager';
-import TrackPlayer, {State, Event} from 'react-native-track-player';
-import store from '../store/store';
 
 const MainScreen = () => {
   const radioStation = require('../content/radio_info.json');

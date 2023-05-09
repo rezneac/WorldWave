@@ -1,18 +1,31 @@
 import {useState, useEffect} from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
-import TrackPlayer, {State, Event} from 'react-native-track-player';
+import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import {PlayerManager} from '../playerManagePlayback/PlayerManager';
+import Icon from 'react-native-vector-icons/Entypo';
 import store from '../../store/store';
 
 const PlayerManagerMenu = () => {
   const [trackTitle, setTrackTitle] = useState<null | string>(null);
   const [imageUri, setImageUri] = useState<string>('');
+  const [onPlay, setOnPlay] = useState<boolean>(false);
+  const {playButton} = PlayerManager();
 
-  useEffect(() => {
+  const updateStateFromStore = () => {
     setImageUri(store.getState().imageUri);
     setTrackTitle(store.getState().stationName);
-  }, [store.getState().stationName]);
-  // console.log(store.getState().stationName);
+    setOnPlay(store.getState().isPlaying);
+  };
+
+  useEffect(() => {
+    const unsubscribe = store.subscribe(updateStateFromStore);
+    return () => {
+      unsubscribe();
+    };
+  }, []);
+
+  const onPressed = async () => {
+    await playButton(onPlay);
+  };
 
   return trackTitle != null ? (
     <View style={styles.container}>
@@ -22,7 +35,23 @@ const PlayerManagerMenu = () => {
           {trackTitle}
         </Text>
       </View>
-      <Image style={styles.icon} source={require('../../assets/pause.svg')} />
+      <TouchableOpacity onPress={onPressed}>
+        {onPlay ? (
+          <Icon
+            style={styles.icon}
+            name="controller-paus"
+            size={53}
+            color="white"
+          />
+        ) : (
+          <Icon
+            style={styles.icon}
+            name="controller-play"
+            size={53}
+            color="white"
+          />
+        )}
+      </TouchableOpacity>
     </View>
   ) : (
     <></>
@@ -45,6 +74,8 @@ const styles = StyleSheet.create({
   },
   icon: {
     // backgroundColor:"white"
+    alignSelf: 'center',
+    margin: 10,
   },
   trackInfo: {
     margin: 10,

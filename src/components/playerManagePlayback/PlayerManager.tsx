@@ -1,9 +1,26 @@
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import TrackPlayer, {State} from 'react-native-track-player';
 import store from '../../store/store';
 
 export const PlayerManager = () => {
   const [checkUri, setCheckUri] = useState('');
+
+  const playButton = async (onPlay: boolean) => {
+    const state = await TrackPlayer.getState();
+    if (state === State.Playing) {
+      await TrackPlayer.pause();
+      store.dispatch({
+        type: 'UPDATE_ON_PLAY',
+        updatePlayState: !onPlay,
+      });
+    } else {
+      await TrackPlayer.play();
+      store.dispatch({
+        type: 'UPDATE_ON_PLAY',
+        updatePlayState: !onPlay,
+      });
+    }
+  };
 
   const playTrack = async (
     uri: string,
@@ -23,19 +40,13 @@ export const PlayerManager = () => {
           if (uri === checkUri) {
             //stops if pressed the same radios station twice
             await TrackPlayer.pause();
-            break;
-          } else {
-            //reset player if selected a new station
-            await TrackPlayer.reset();
-            await TrackPlayer.add({
-              id: 'trackId',
-              url: uri,
-              title: stationName,
+            store.dispatch({
+              type: 'UPDATE_ON_PLAY',
+              updatePlayState: false,
             });
-            await TrackPlayer.play();
-            setCheckUri(uri);
             break;
           }
+
         case State.Paused:
           // start again player if was stopped previously
           await TrackPlayer.reset();
@@ -45,6 +56,11 @@ export const PlayerManager = () => {
             title: stationName,
           });
           await TrackPlayer.play();
+          store.dispatch({
+            type: 'UPDATE_ON_PLAY',
+            updatePlayState: true,
+          });
+
           setCheckUri(uri);
           break;
         default:
@@ -55,12 +71,19 @@ export const PlayerManager = () => {
             title: stationName,
           });
           await TrackPlayer.play();
+          store.dispatch({
+            type: 'UPDATE_ON_PLAY',
+            updatePlayState: true,
+          });
+
           setCheckUri(uri);
           break;
       }
     } catch (error) {
       console.log('Error loading or playing sound', error);
     }
+
+    console.log(store.getState().isPlaying);
   };
-  return {playTrack};
+  return {playTrack, playButton};
 };
