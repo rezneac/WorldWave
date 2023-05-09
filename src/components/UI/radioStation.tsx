@@ -1,7 +1,8 @@
-import React from "react";
-import { View, Text, StyleSheet, Image } from "react-native";
+import React from 'react';
+import {View, Text, StyleSheet, Image} from 'react-native';
 
 const radioStation = (prop: any) => {
+
   return (
     <View style={styles.mainView}>
       <View style={styles.stationView}>
@@ -10,6 +11,7 @@ const radioStation = (prop: any) => {
           <Image
             style={styles.image}
             source={{ uri: prop.details[prop.index].radioimg }}
+
           />
         </View>
 
@@ -32,18 +34,18 @@ const styles = StyleSheet.create({
   mainView: {
     height: 120,
     width: 100,
-    backgroundColor: "#ffffff",
+    backgroundColor: '#ffffff',
     borderRadius: 3.5,
   },
   stationView: {
-    flexDirection: "column",
+    flexDirection: 'column',
     flex: 1,
   },
   stationNameView: {
     height: 20,
     width: 100,
-    backgroundColor: "#C5C5C5",
-    alignItems: "center",
+    backgroundColor: '#C5C5C5',
+    alignItems: 'center',
     flex: 1,
     borderBottomStartRadius: 3.5,
     borderBottomEndRadius: 3.5,
@@ -53,8 +55,8 @@ const styles = StyleSheet.create({
     height: 53,
     width: 100,
     flex: 5,
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
 

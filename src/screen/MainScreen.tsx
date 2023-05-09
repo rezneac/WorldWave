@@ -1,54 +1,17 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {View, StyleSheet, FlatList, TouchableOpacity} from 'react-native';
-// import { Audio } from "expo-av";
-import RadioStation from '../components/radioStation';
-import TrackPlayer, {State} from 'react-native-track-player';
+import RadioStation from '../components/UI/radioStation';
+import PlayerManagerMenu from '../components/UI/PlayerManagerMenu';
+import {PlayerManager} from '../components/playerManagePlayback/PlayerManager';
+import TrackPlayer, {State, Event} from 'react-native-track-player';
 
 const MainScreen = () => {
   const radioStation = require('../content/radio_info.json');
+  const {playTrack} = PlayerManager();
+  const [display, setDisplay] = useState(false);
 
-  // const sound = new Audio.Sound();
-
-  async function manageSound(uri: string) {
-    console.log(uri);
-    const state = await TrackPlayer.getState();
-
-    // await TrackPlayer.add({
-    //   id: 'trackId',
-    //   url: uri,
-    //   title: 'Track Title',
-    //   artist: 'Track Artist',
-    //   // artwork: require('track.png')
-    // });
-
-    // await TrackPlayer.play();
-
-    try {
-      if (state === State.Playing) {
-        await TrackPlayer.reset();
-
-        await TrackPlayer.add({
-          id: 'trackId',
-          url: uri,
-          title: 'Track Title',
-          artist: 'Track Artist',
-          // artwork: require('track.png')
-        });
-        await TrackPlayer.play();
-      } else {
-        await TrackPlayer.add({
-          id: 'trackId',
-          url: uri,
-          title: 'Track Title',
-          artist: 'Track Artist',
-          // artwork: require('track.png')
-        });
-
-        await TrackPlayer.play();
-      }
-    } catch (error) {
-      console.log('Error loading or playing sound', error);
-    }
+  async function manageSound(uri: string, index: number, stationName: string) {
+    playTrack(uri, index, stationName);
   }
 
   return (
@@ -62,7 +25,13 @@ const MainScreen = () => {
         renderItem={({item, index}) => {
           return (
             <TouchableOpacity
-              onPress={() => manageSound(radioStation[index].url)}>
+              onPress={() =>
+                manageSound(
+                  radioStation[index].url,
+                  index,
+                  radioStation[index].stationName,
+                )
+              }>
               <View style={styles.radioStationView}>
                 <RadioStation details={radioStation} index={index} />
               </View>
@@ -70,6 +39,7 @@ const MainScreen = () => {
           );
         }}
       />
+      <PlayerManagerMenu />
     </View>
   );
 };

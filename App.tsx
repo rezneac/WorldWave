@@ -1,33 +1,17 @@
-import React from 'react';
-import {View, Text} from 'react-native';
+import * as React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import MainScreen from './src/screen/MainScreen';
 import TrackPlayer from 'react-native-track-player';
 
-const start = async () => {
-  // Set up the player
-  await TrackPlayer.setupPlayer();
+const Stack = createNativeStackNavigator();
 
-  // Add a track to the queue
-  await TrackPlayer.add({
-      id: 'trackId',
-      url: require('./track.mp3'),
-      title: 'Track Title',
-      artist: 'Track Artist',
-      // artwork: require('track.png')
-  });
-
-  // Start playing it
-  // await TrackPlayer.play();
-};
-
-const App = () => {
-  // start();
-
-
+export default function App() {
   return (
-    <View>
-      <Text>Test</Text>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Main" component={MainScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-};
-
-export default App;
+}
