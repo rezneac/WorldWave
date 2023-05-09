@@ -1,17 +1,23 @@
 import React, {useState, useEffect} from 'react';
 import {View, StyleSheet, FlatList, TouchableOpacity} from 'react-native';
-import RadioStation from '../components/UI/radioStation';
-import PlayerManagerMenu from '../components/UI/PlayerManagerMenu';
+import RadioStation from '../components/UI/RadioStation';
+import PlayerManagerMenu from '../components/UI/BottomMenu';
 import {PlayerManager} from '../components/playerManagePlayback/PlayerManager';
 import TrackPlayer, {State, Event} from 'react-native-track-player';
+import store from '../store/store';
 
 const MainScreen = () => {
   const radioStation = require('../content/radio_info.json');
   const {playTrack} = PlayerManager();
   const [display, setDisplay] = useState(false);
 
-  async function manageSound(uri: string, index: number, stationName: string) {
-    playTrack(uri, index, stationName);
+  async function manageSound(
+    uri: string,
+    stationName: string,
+    imageUri: string,
+  ) {
+    console.log(imageUri);
+    playTrack(uri, stationName, imageUri);
   }
 
   return (
@@ -28,8 +34,8 @@ const MainScreen = () => {
               onPress={() =>
                 manageSound(
                   radioStation[index].url,
-                  index,
                   radioStation[index].stationName,
+                  radioStation[index].radioimg,
                 )
               }>
               <View style={styles.radioStationView}>

@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 
-const radioStation = (prop: any) => {
+const RadioStation = (prop: any) => {
 
   return (
     <View style={styles.mainView}>
@@ -11,7 +11,6 @@ const radioStation = (prop: any) => {
           <Image
             style={styles.image}
             source={{ uri: prop.details[prop.index].radioimg }}
-
           />
         </View>
 
@@ -60,4 +59,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default radioStation;
+export default RadioStation;

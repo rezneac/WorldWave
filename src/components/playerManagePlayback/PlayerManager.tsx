@@ -1,22 +1,21 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import TrackPlayer, {State} from 'react-native-track-player';
+import store from '../../store/store';
 
 export const PlayerManager = () => {
   const [checkUri, setCheckUri] = useState('');
 
-  const getStationName = async () => {
-    TrackPlayer.getTrack(0)
-      .then(trackObject => {
-        console.log(`Title: ${trackObject!.title}`);
-        return trackObject!.title;
-      })
-      .catch(error => {
-        console.error(error);
-      });
-  };
-
-  const playTrack = async (uri: string, index: number, stationName: string) => {
+  const playTrack = async (
+    uri: string,
+    stationName: string,
+    imageUri: string,
+  ) => {
     const state = await TrackPlayer.getState();
+    await store.dispatch({
+      type: 'UPDATE_STATION_INFO',
+      stationUri: imageUri,
+      stationName: stationName,
+    });
 
     try {
       switch (state) {
