@@ -65,6 +65,7 @@ export const PlayerManager = () => {
           break;
         default:
           // start player with radio
+          await TrackPlayer.reset();
           await TrackPlayer.add({
             id: 'trackId',
             url: uri,
@@ -82,8 +83,6 @@ export const PlayerManager = () => {
     } catch (error) {
       console.log('Error loading or playing sound', error);
     }
-
-    console.log(store.getState().isPlaying);
   };
   return {playTrack, playButton};
 };

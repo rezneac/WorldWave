@@ -31,7 +31,7 @@ const PlayerManagerMenu = () => {
     <View style={styles.container}>
       <Image style={styles.image} source={{uri: imageUri!}} />
       <View style={styles.trackInfo}>
-        <Text style={styles.text} ellipsizeMode="tail">
+        <Text style={styles.text} ellipsizeMode="middle">
           {trackTitle}
         </Text>
       </View>
@@ -64,7 +64,6 @@ const styles = StyleSheet.create({
     height: 75,
     backgroundColor: '#344051',
     flexDirection: 'row',
-    justifyContent: 'space-between',
   },
   image: {
     width: 100,
@@ -73,18 +72,20 @@ const styles = StyleSheet.create({
     alignContent: 'center',
   },
   icon: {
-    // backgroundColor:"white"
     alignSelf: 'center',
     margin: 10,
   },
   trackInfo: {
     margin: 10,
     alignSelf: 'center',
+    width: '45%',
+    minWidth: '45%',
   },
   text: {
     color: 'white',
     fontWeight: 'bold',
     fontSize: 22,
+    textAlign: 'center',
   },
 });
 

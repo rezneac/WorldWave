@@ -14,7 +14,6 @@ const MainScreen = () => {
     stationName: string,
     imageUri: string,
   ) {
-    console.log(imageUri);
     playTrack(uri, stationName, imageUri);
   }
 
