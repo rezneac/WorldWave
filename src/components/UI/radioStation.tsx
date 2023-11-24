@@ -2,21 +2,17 @@ import React from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 
 const RadioStation = (prop: any) => {
-
   return (
     <View style={styles.mainView}>
       <View style={styles.stationView}>
         {/* Displays radio station image */}
         <View style={styles.imageView}>
-          <Image
-            style={styles.image}
-            source={{ uri: prop.details[prop.index].radioimg }}
-          />
+          <Image style={styles.image} source={{uri: prop.details[prop.index].radioimg}} />
         </View>
 
         {/* Displays radio station name */}
         <View style={styles.stationNameView}>
-          <Text numberOfLines={1} ellipsizeMode="tail">
+          <Text numberOfLines={2} ellipsizeMode="tail">
             {prop.details[prop.index].stationName}
           </Text>
         </View>
@@ -41,11 +37,10 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   stationNameView: {
-    height: 20,
+    minHeight: 20,
     width: 100,
     backgroundColor: '#C5C5C5',
     alignItems: 'center',
-    flex: 1,
     borderBottomStartRadius: 3.5,
     borderBottomEndRadius: 3.5,
     opacity: 50,
