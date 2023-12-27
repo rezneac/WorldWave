@@ -35,6 +35,7 @@ const MainScreen = () => {
     <View style={styles.container}>
       {/* Displays list of radio stations */}
       <FlatList
+        showsVerticalScrollIndicator={false}
         data={radioStation}
         keyExtractor={item => item.stationName}
         numColumns={3}
