@@ -1,0 +1,28 @@
+[
+  {
+    "en": {
+      "topBar": {"Stations": "Stations", "Favourites": "Favourites", "Settings": "Settings"},
+      "settingsScreen": {"Version": "Version", "language": "Select your language"},
+      "favouritesScreen": {
+        "message": "There aren't any Favourite Station saved",
+        "hint": "To save a station hold at your Favourite station"
+      }
+    },
+    "ro": {
+      "topBar": {"Stations": "Stanții", "Favourites": "Favoritele", "Settings": "Setări"},
+      "settingsScreen": {"Version": "Versia", "language": "Alege limba"},
+      "favouritesScreen": {
+        "message": "Nu există nicio stanție preferat salvată",
+        "hint": "Pentru a salva o stație favorită țineti degetul pe ea"
+      }
+    },
+    "ru": {
+      "topBar": {"Stations": "Станции", "Favourites": "Понравившийся", "Settings": "Настройки"},
+      "settingsScreen": {"Version": "Версия", "language": "Выбери свой язык"},
+      "favouritesScreen": {
+        "message": "Пока-что тут нету любимых станции",
+        "hint": "Чтоб сохранить удерживайте палец над любимой станиции"
+      }
+    }
+  }
+]

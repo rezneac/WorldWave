@@ -24,8 +24,6 @@ const ContextMenu = ({position, onDisplay, contextProp}: iProp) => {
   var adjustedX = Math.min(position.x, maxX);
   var adjustedY = Math.min(position.y - 30, maxY - 80);
 
-  console.log(contextProp);
-
   const onPress = () => {
     onDisplay(false);
   };
@@ -63,7 +61,7 @@ const styles = StyleSheet.create({
   contextMenu: {
     flex: 1,
     position: 'absolute',
-    backgroundColor: '#808080',
+    backgroundColor: '#344051',
     borderRadius: 3.5,
     padding: 16,
   },

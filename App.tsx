@@ -3,7 +3,7 @@ import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import MainScreen from './src/screen/MainScreen';
-import CustomBottomBar from './src/components/UI/navigationBar/CustomBottomBar';
+import CustomBottomBar from './src/components/UI/navigationBar/CustomTopBar';
 import FavouriteScreen from './src/screen/FavouriteScreen';
 import SettingsScreen from './src/screen/SettingsScreen';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';

@@ -1,9 +1,17 @@
 import {useState} from 'react';
-import TrackPlayer, {State} from 'react-native-track-player';
+import TrackPlayer, {Capability, State} from 'react-native-track-player';
 import store from '../../store/store';
 
 export const PlayerManager = () => {
   const [checkUri, setCheckUri] = useState('');
+
+  TrackPlayer.updateOptions({
+    // Media controls capabilities
+    capabilities: [Capability.Play, Capability.Pause],
+
+    // Capabilities that will show up when the notification is in the compact form on Android
+    compactCapabilities: [Capability.Play, Capability.Pause],
+  });
 
   const playButton = async (onPlay: boolean) => {
     const state = await TrackPlayer.getState();
@@ -22,11 +30,7 @@ export const PlayerManager = () => {
     }
   };
 
-  const playTrack = async (
-    uri: string,
-    stationName: string,
-    imageUri: string,
-  ) => {
+  const playTrack = async (uri: string, stationName: string, imageUri: string) => {
     const state = await TrackPlayer.getState();
     await store.dispatch({
       type: 'UPDATE_STATION_INFO',
@@ -39,7 +43,7 @@ export const PlayerManager = () => {
         case State.Playing:
           if (uri === checkUri) {
             //stops if pressed the same radios station twice
-            await TrackPlayer.pause();
+            await TrackPlayer.stop();
             store.dispatch({
               type: 'UPDATE_ON_PLAY',
               updatePlayState: false,
@@ -54,6 +58,7 @@ export const PlayerManager = () => {
             id: 'trackId',
             url: uri,
             title: stationName,
+            artwork: imageUri,
           });
           await TrackPlayer.play();
           store.dispatch({
@@ -70,6 +75,7 @@ export const PlayerManager = () => {
             id: 'trackId',
             url: uri,
             title: stationName,
+            artwork: imageUri,
           });
           await TrackPlayer.play();
           store.dispatch({

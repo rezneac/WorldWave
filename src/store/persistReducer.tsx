@@ -18,7 +18,6 @@ interface AddStationAction {
 interface ExcludeStationAction {
   type: 'EXCLUDE_STATION';
   stationIndex: number;
-  updatePlayState: boolean;
 }
 
 // Union type for all possible actions
@@ -43,19 +42,15 @@ const reducer = (state: AppState = initialState, action: AppAction): AppState =>
       };
 
     case 'EXCLUDE_STATION':
+      const updatedListStations = [...state.stations];
+      if (action.stationIndex >= 0 && action.stationIndex < updatedListStations.length) {
+        updatedListStations.splice(action.stationIndex, 1);
+      }
+
       return {
         ...state,
-        stations: state.stations.map((station, index) => {
-          if (index === action.stationIndex) {
-            return {
-              ...station,
-              isPlaying: action.updatePlayState,
-            };
-          }
-          return station;
-        }),
+        stations: updatedListStations,
       };
-
     default:
       return state;
   }

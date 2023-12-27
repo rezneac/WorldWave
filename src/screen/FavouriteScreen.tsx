@@ -1,4 +1,4 @@
-import {FlatList, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {FlatList, StyleSheet, Text, ToastAndroid, TouchableOpacity, View} from 'react-native';
 import {PlayerManager} from '../components/playerManagePlayback/PlayerManager';
 import RadioStation from '../components/UI/RadioStation';
 import {store, persistor} from '../../src/store/persistStore';
@@ -35,6 +35,15 @@ const FavouriteScreen = () => {
     };
   }, []);
 
+  const handleDeletingStations = (stationIndex: number) => {
+    store.dispatch({
+      type: 'EXCLUDE_STATION',
+      stationIndex: stationIndex,
+    });
+
+    ToastAndroid.show('Deleted from favourite: ' + filteredStations[stationIndex].stationName, ToastAndroid.LONG);
+  };
+
   const {playTrack} = PlayerManager();
 
   async function manageSound(uri: string, stationName: string, imageUri: string) {
@@ -44,28 +53,36 @@ const FavouriteScreen = () => {
   return (
     <View style={styles.container}>
       {/* Displays list of radio stations */}
-      <FlatList
-        data={filteredStations}
-        keyExtractor={item => item.stationName}
-        numColumns={3}
-        initialNumToRender={50}
-        renderItem={({item, index}) => {
-          return (
-            <TouchableOpacity
-              onPress={() =>
-                manageSound(
-                  filteredStations[index].url,
-                  filteredStations[index].stationName,
-                  filteredStations[index].radioimg,
-                )
-              }>
-              <View style={styles.radioStationView}>
-                <RadioStation details={filteredStations} index={index} />
-              </View>
-            </TouchableOpacity>
-          );
-        }}
-      />
+      {filteredStations.length == 0 ? (
+        <>
+          <Text style={styles.textMessage}>There aren't any favourite station saved</Text>
+          <Text style={styles.textHint}>To save a station hold at your favourite station</Text>
+        </>
+      ) : (
+        <FlatList
+          data={filteredStations}
+          keyExtractor={item => item.stationName}
+          numColumns={3}
+          initialNumToRender={50}
+          renderItem={({item, index}) => {
+            return (
+              <TouchableOpacity
+                onPress={() =>
+                  manageSound(
+                    filteredStations[index].url,
+                    filteredStations[index].stationName,
+                    filteredStations[index].radioimg,
+                  )
+                }
+                onLongPress={() => handleDeletingStations(index)}>
+                <View style={styles.radioStationView}>
+                  <RadioStation details={filteredStations} index={index} />
+                </View>
+              </TouchableOpacity>
+            );
+          }}
+        />
+      )}
     </View>
   );
 };
@@ -89,5 +106,16 @@ const styles = StyleSheet.create({
     padding: 16,
     borderColor: 'red',
     borderWidth: 5,
+  },
+  textMessage: {
+    fontSize: 20,
+    color: 'aliceblue',
+    textAlign: 'center',
+  },
+  textHint: {
+    fontSize: 14,
+    color: 'aliceblue',
+    marginTop: 20,
+    textAlign: 'center',
   },
 });

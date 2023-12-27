@@ -17,6 +17,12 @@ const CustomBottomBar = ({state, descriptors, navigation}: any) => {
     }
   };
 
+  const screenNames: {[key: string]: string} = {
+    MainScreen: 'Stations',
+    FavouriteScreen: 'Favourites',
+    SettingsScreen: 'Settings',
+  };
+
   return (
     <View style={styles.tabContainer}>
       {state.routes.map((route: any, index: any) => {
@@ -47,7 +53,9 @@ const CustomBottomBar = ({state, descriptors, navigation}: any) => {
           <View style={styles.tabItem} key={index}>
             <Pressable onPress={onPressHandler} style={[{alignItems: 'center'}]}>
               {getIcon(label, isFocused ? '#ffffff' : '#000')}
-              <Text style={[styles.textLabel, isFocused ? {color: '#fff'} : {color: '#000'}]}>{label}</Text>
+              <Text style={[styles.textLabel, isFocused ? {color: '#fff'} : {color: '#000'}]}>
+                {screenNames[label]}
+              </Text>
             </Pressable>
           </View>
         );

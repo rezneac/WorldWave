@@ -1,18 +1,13 @@
-import React, {useState, useEffect, useRef} from 'react';
-import {View, StyleSheet, FlatList, TouchableOpacity, Text, Dimensions} from 'react-native';
+import React, {useRef} from 'react';
+import {View, StyleSheet, FlatList, TouchableOpacity, Text, Dimensions, ToastAndroid} from 'react-native';
 import RadioStation from '../components/UI/RadioStation';
-import PlayerManagerMenu from '../components/UI/BottomMenu';
 import {PlayerManager} from '../components/playerManagePlayback/PlayerManager';
-import ContextMenu from '../components/UI/ContextMenuPopUp';
 import {store, persistor} from '../../src/store/persistStore';
 
 const MainScreen = () => {
   const radioStation = require('../content/radio_info.json');
   const {playTrack} = PlayerManager();
-  const [display, setDisplay] = useState(false);
   const currentStation = useRef<string>('None');
-
-  const [positionPressed, setPositionPressed] = useState({x: 0, y: 0});
 
   const handleAddNewStation = (stationUri: string, stationName: string) => {
     //checks if we already have this station as favourite in store
@@ -27,23 +22,9 @@ const MainScreen = () => {
         stationUri: stationUri,
         stationName: stationName,
       });
+      ToastAndroid.show('A new favourite station added: ' + stationName, ToastAndroid.LONG);
     }
-
-    console.log('Test stores Main: ' + store.getState());
   };
-
-  const onDisplayHandler = (value: boolean) => {
-    setDisplay(value);
-  };
-
-  // TODO: decide to keep it or delete
-  // const handleLongPress = (event: any) => {
-  //   const {pageX, pageY} = event.nativeEvent;
-
-  //   setPositionPressed({x: pageX, y: pageY});
-
-  //   setDisplay(true);
-  // };
 
   async function manageSound(uri: string, stationName: string, imageUri: string) {
     currentStation.current = stationName;
@@ -64,7 +45,6 @@ const MainScreen = () => {
               onPress={() =>
                 manageSound(radioStation[index].url, radioStation[index].stationName, radioStation[index].radioimg)
               }
-              //TODO : Implement a menu for interacting with radio (add to favorites ...)
               onLongPress={() => handleAddNewStation(radioStation[index].radioimg, radioStation[index].stationName)}>
               <View style={styles.radioStationView}>
                 <RadioStation details={radioStation} index={index} />
@@ -73,7 +53,6 @@ const MainScreen = () => {
           );
         }}
       />
-      {display && <ContextMenu position={positionPressed} onDisplay={onDisplayHandler} contextProp={currentStation} />}
     </View>
   );
 };
