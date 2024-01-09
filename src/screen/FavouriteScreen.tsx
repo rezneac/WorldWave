@@ -56,7 +56,7 @@ const FavouriteScreen = () => {
       {filteredStations.length == 0 ? (
         <>
           <Text style={styles.textMessage}>There aren't any favourite station saved</Text>
-          <Text style={styles.textHint}>To save a station hold at your favourite station</Text>
+          <Text style={styles.textHint}>To save or delete a station hold at your station</Text>
         </>
       ) : (
         <FlatList

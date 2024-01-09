@@ -1,8 +1,9 @@
-import React, {useRef} from 'react';
-import {View, StyleSheet, FlatList, TouchableOpacity, Text, Dimensions, ToastAndroid} from 'react-native';
+import React, {useRef, useEffect} from 'react';
+import {View, StyleSheet, FlatList, TouchableOpacity, ToastAndroid} from 'react-native';
 import RadioStation from '../components/UI/RadioStation';
 import {PlayerManager} from '../components/playerManagePlayback/PlayerManager';
 import {store, persistor} from '../../src/store/persistStore';
+import crashlytics from '@react-native-firebase/crashlytics';
 
 const MainScreen = () => {
   const radioStation = require('../content/radio_info.json');
@@ -16,7 +17,7 @@ const MainScreen = () => {
       .stations.some(station => station.imageUri === stationUri && station.stationName === stationName);
 
     if (!stationExists) {
-      console.log('added new station to store: ' + stationName);
+      crashlytics().log('added new station to store: ' + stationName);
       store.dispatch({
         type: 'ADD_NEW_STATION',
         stationUri: stationUri,
@@ -27,9 +28,14 @@ const MainScreen = () => {
   };
 
   async function manageSound(uri: string, stationName: string, imageUri: string) {
+    crashlytics().log('Pressed on station: ' + stationName);
     currentStation.current = stationName;
     playTrack(uri, stationName, imageUri);
   }
+
+  useEffect(() => {
+    crashlytics().log('App mounted!');
+  }, []);
 
   return (
     <View style={styles.container}>
@@ -42,15 +48,17 @@ const MainScreen = () => {
         initialNumToRender={50}
         renderItem={({item, index}) => {
           return (
-            <TouchableOpacity
-              onPress={() =>
-                manageSound(radioStation[index].url, radioStation[index].stationName, radioStation[index].radioimg)
-              }
-              onLongPress={() => handleAddNewStation(radioStation[index].radioimg, radioStation[index].stationName)}>
-              <View style={styles.radioStationView}>
-                <RadioStation details={radioStation} index={index} />
-              </View>
-            </TouchableOpacity>
+            <>
+              <TouchableOpacity
+                onPress={() =>
+                  manageSound(radioStation[index].url, radioStation[index].stationName, radioStation[index].radioimg)
+                }
+                onLongPress={() => handleAddNewStation(radioStation[index].radioimg, radioStation[index].stationName)}>
+                <View style={styles.radioStationView}>
+                  <RadioStation details={radioStation} index={index} />
+                </View>
+              </TouchableOpacity>
+            </>
           );
         }}
       />

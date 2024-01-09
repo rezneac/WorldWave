@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import TrackPlayer, {Capability, State} from 'react-native-track-player';
 import store from '../../store/store';
+import crashlytics from '@react-native-firebase/crashlytics';
 
 export const PlayerManager = () => {
   const [checkUri, setCheckUri] = useState('');
@@ -86,7 +87,8 @@ export const PlayerManager = () => {
           setCheckUri(uri);
           break;
       }
-    } catch (error) {
+    } catch (error: any) {
+      crashlytics().recordError(error);
       console.log('Error loading or playing sound', error);
     }
   };

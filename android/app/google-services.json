@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "684844653336",
+    "project_id": "worldwave-bb4d7",
+    "storage_bucket": "worldwave-bb4d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684844653336:android:c2531b351734ef4c56dc6d",
+        "android_client_info": {
+          "package_name": "com.worldwave"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPmmh11GRJD8q2B_HnQXKCXVzDObtWVrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

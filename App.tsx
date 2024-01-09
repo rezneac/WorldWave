@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import MainScreen from './src/screen/MainScreen';
 import CustomBottomBar from './src/components/UI/navigationBar/CustomTopBar';
 import FavouriteScreen from './src/screen/FavouriteScreen';
@@ -12,6 +11,7 @@ import PlayerManagerMenu from './src/components/UI/BottomMenu';
 import {store, persistor} from './src/store/persistStore';
 import {Provider} from 'react-redux';
 import {PersistGate} from 'redux-persist/integration/react';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -74,6 +74,7 @@ const TabStack = () => {
 export default function App() {
   return (
     <>
+    
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <StatusBar animated={true} barStyle={'dark-content'} backgroundColor="#596673" />
