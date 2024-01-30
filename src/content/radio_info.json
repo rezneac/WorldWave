@@ -2,266 +2,266 @@
   {
     "stationName": "7SSR Dance",
     "url": "https://onlineradiobox.com/json/md/7ssrdance/play?platform=web",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/1/94001.v6.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/7SSRDance.png"
   },
   {
     "stationName": "Diaspora Media",
     "url": "https://stream.radiojar.com/58ts0hd5hrquv",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/0/81790.v8.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/DiasporaMedia.png"
   },
   {
     "stationName": "Drive FM",
     "url": "https://onlineradiobox.com/json/md/drivefm/play?platform=web",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/9/116539.v3.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/DriveFM.png"
   },
   {
     "stationName": "Eco FM",
     "url": "https://astreaming.ecofm.md:8443/stream.aac",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/3/1023.v6.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/EcoFM.png"
   },
   {
     "stationName": "GRT FM (GAGAUZRADIOSU)",
     "url": "https://a1.radioheart.ru:9001/gagauzradiosu",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/9/109569.v8.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/GRTFM(GAGAUZRADIOSU).png"
   },
   {
     "stationName": "HIT FM Русское Хитовое",
     "url": "https://stream.hitfm.md:8443/HitFM",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/9/101839.v4.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/HITFMРусскоеХитовое.png"
   },
   {
     "stationName": "HIT FM",
     "url": "https://stream.dixi.md:9443/HitFM",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/0/360.v22.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/HITFM.png"
   },
   {
     "stationName": "Jurnal FM",
     "url": "https://audio.jurnalfm.md/lq",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/1/931.v6.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/JurnalFM.png"
   },
   {
     "stationName": "Kiss FM",
     "url": "https://live.kissfm.md/kissfm.chisinau",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/8/1038.v10.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/KissFM.png"
   },
   {
     "stationName": "LSM Radio",
     "url": "https://s5.radio.co/sfff7b7e97/listen",
-    "radioimg": "https://cdn.logfm.com/i/6/6850.webp?d=1678640236"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/LSMRadio.png"
   },
   {
     "stationName": "MONKEY.FM",
     "url": "https://radio.monkey.fm:8001/live",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/5/70035.v11.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/MONKEY.FM.png"
   },
   {
     "stationName": "Maestro FM",
     "url": "https://www.radio.md/stream/maestrofm",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/0/950.v5.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/MaestroFM.png"
   },
   {
     "stationName": "Mega HIT",
     "url": "https://onlineradiobox.com/json/md/megahit/play?platform=web",
-    "radioimg": "https://cdn.onlineradiobox.com/img/logo/0/116540.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/MegaHIT.png"
   },
   {
     "stationName": "Europa FM",
     "url": "https://astreaming.edi.ro:8443/EuropaFM_aac",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/9/18789.v12.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/EuropaFM.png"
   },
   {
     "stationName": "Megapolis FM",
     "url": "https://megapolisfm.md:8443/886aac",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/8/88728.v7.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/MegapolisFM.png"
   },
   {
     "stationName": "Muz FM",
     "url": "https://live.muzfm.md:8000/muzfm",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/5/935.v8.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/MuzFM.png"
   },
   {
     "stationName": "OM Radio",
     "url": "https://www.radio.md/stream/omradio",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/5/70725.v9.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/OMRadio.png"
   },
   {
     "stationName": "PRO Dj Radio",
     "url": "https://onlineradiobox.com/json/md/prodj/play?platform=web",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/5/79545.v6.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/PRODjRadio.png"
   },
   {
     "stationName": "Pro FM",
     "url": "https://edge126.rcs-rds.ro/profm/profm.mp3",
-    "radioimg": "https://www.radio.md/images/logos/profm.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/ProFM.png"
   },
   {
     "stationName": "Publika FM",
     "url": "https://www.publika.md/live",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/0/51180.v5.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/PublikaFM.png"
   },
   {
     "stationName": "RECORD",
     "url": "https://air.radiorecord.md/RecordMD",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/3/106673.v31.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RECORD.png"
   },
   {
     "stationName": "Radio 7",
     "url": "https://onlineradiobox.com/json/md/radio71052/play?platform=web",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/8/958.v12.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/Radio7.png"
   },
   {
     "stationName": "Radio Albena",
     "url": "https://www.radio.md/stream/radioalbena",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/2/952.v6.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioAlbena.png"
   },
   {
     "stationName": "Radio Bucovina",
     "url": "http://live.radiobucovina.ro:8000/;",
-    "radioimg": "https://static2.mytuner.mobi/media/tvos_radios/pjypmdxdnha8.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioBucovina.png"
   },
   {
     "stationName": "Radio Chișinău",
     "url": "http://95.65.9.171:8000/radiochisinau",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/1/951.v22.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioChișinău.png"
   },
   {
     "stationName": "Radio Aquarelle",
     "url": "https://onlineradiobox.com/json/md/aquarelle/play?platform=web",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/5/60715.v10.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioAquarelle.png"
   },
   {
     "stationName": "Radio BEAT",
     "url": "https://ssl.omegahost.ro/9998/stream",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/3/1043.v10.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioBEAT.png"
   },
   {
     "stationName": "Radio Fresh MD",
     "url": "https://stream-46.zeno.fm/ttofovumhg1vv",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/3/118463.v2.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioFreshMD.png"
   },
   {
     "stationName": "Radio Logos",
     "url": "https://onlineradiobox.com/json/md/radiologos/play?platform=web",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/4/1044.v8.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioLogos.png"
   },
   {
     "stationName": "Radio Micul Samaritean",
     "url": "https://s5.radio.co/sfff7b7e97/listen",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/9/34749.v3.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioMiculSamaritean.png"
   },
   {
     "stationName": "Radio Moldova",
     "url": "https://radiolive.trm.md:8001/hls/actualitati.m3u8",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/8/938.v8.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioMoldova.png"
   },
   {
     "stationName": "Radio Noroc",
     "url": "https://storage.voceabasarabiei.md:8001/radionoroc.mp3",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/0/1020.v8.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioNoroc.png"
   },
   {
     "stationName": "Radio ONE",
     "url": "https://onlineradiobox.com/json/md/one/play?platform=web",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/7/84427.v5.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioONE.png"
   },
   {
     "stationName": "Radio Orhei FM 97.5",
     "url": "https://onlineradiobox.com/json/md/orhei/play?platform=web",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/6/83896.v6.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioOrheiFM97.5.png"
   },
   {
     "stationName": "Radio Plai",
     "url": "https://www.radio.md/stream/radioplai",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/8/73188.v6.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioPlai.png"
   },
   {
     "stationName": "Radio Pro Mingir",
     "url": "https://onlineradiobox.com/json/md/promingir/play?platform=web",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/1/68871.v9.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioProMingir.png"
   },
   {
     "stationName": "Radio Relax Moldova",
     "url": "https://stream.hitfm.md:8443/RadioRelax",
-    "radioimg": "https://cdn.onlineradiobox.com/img/logo/8/116538.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioRelaxMoldova.png"
   },
   {
     "stationName": "Radio Studentus",
     "url": "https://onlineradiobox.com/json/md/studentus/play?platform=web",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/9/68179.v6.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioStudentus.png"
   },
   {
     "stationName": "Radio Vocea Basarabiei",
     "url": "https://storage.voceabasarabiei.md:8001/radiovb_aac",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/9/1039.v2.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioVoceaBasarabiei.png"
   },
   {
     "stationName": "Radio Vocea Sperantei",
     "url": "https://onlineradiobox.com/json/md/voceasperantei/play?platform=web",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/1/116541.v2.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioVoceaSperantei.png"
   },
   {
     "stationName": "Radio ZUM 1 (new release)",
     "url": "https://streams.radiozum.md/listen/zum1/ZUM1",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/0/1040.v11.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioZUM1(newrelease).png"
   },
   {
     "stationName": "Radio ZUM 2 (2000's)",
     "url": "https://streams.radiozum.md/listen/zum2/ZUM2",
-    "radioimg": "https://res.cloudinary.com/super7/image/upload/v1698337257/rz-api-prod/images/radio_zum_2_muzica_anilor_2000.jpg"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioZUM2(2000's).png"
   },
   {
     "stationName": "Radio ZUM 3 (world music)",
     "url": "https://streams.radiozum.md/listen/zum3/ZUM3",
-    "radioimg": "https://res.cloudinary.com/super7/image/upload/v1698337268/rz-api-prod/images/radio_zum_3_world_music.jpg"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioZUM3(worldmusic).png"
   },
   {
     "stationName": "Radio ZUM 4 (study/work)",
     "url": "hhttps://streams.radiozum.md/listen/zum4/ZUM4",
-    "radioimg": "https://res.cloudinary.com/super7/image/upload/v1698337048/rz-api-prod/images/radio_zum_4_study_work.jpg"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RadioZUM4(studywork).png.jpg"
   },
   {
     "stationName": "Record Rock",
     "url": "https://air.radiorecord.md/rock.aacp",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/6/123166.v4.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/RecordRock.png"
   },
   {
     "stationName": "Авторадио Молдова",
     "url": "https://onlineradiobox.com/json/md/auto/play?platform=web",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/4/83754.v3.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/АвторадиоМолдова.png"
   },
   {
     "stationName": "Новое Радио",
     "url": "https://onlineradiobox.com/json/md/novoeradiomd/play?platform=web",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/8/66878.v7.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/НовоеРадио.png"
   },
   {
     "stationName": "Радио 1 Тирасполь",
     "url": "https://www.radio.md/stream/radio1tiraspol",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/5/1045.v4.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/Радио1Тирасполь.png"
   },
   {
     "stationName": "Радио Nik FM",
     "url": "https://onlineradiobox.com/json/md/radionikfm/play?platform=web",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/2/1022.v5.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/РадиоNikFM.png"
   },
   {
     "stationName": "Радио Алла",
     "url": "https://stream.hitfm.md:8443/Alla",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/4/934.v4.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/РадиоАлла.png"
   },
   {
     "stationName": "Ретро FM",
     "url": "https://efir.retrofm.md:8000/retro",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/5/92305.v8.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/РетроFM.png"
   },
   {
     "stationName": "Русское Любимое",
     "url": "https://onlineradiobox.com/json/md/1037rusradiomold/play?platform=web",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/6/936.v8.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/РусскоеЛюбимое.png"
   },
   {
     "stationName": "Русское Радио Молдова",
     "url": "https://cors.bitwize.com.lb/https://live.ruradio.md:8000/ruradio",
-    "radioimg": "https://cdn.onlineradiobox.com/img/l/1/119771.v3.png"
+    "radioimg": "https://raw.githubusercontent.com/rezneac/WorldWaveContent/main/radio_images/РусскоеРадиоМолдова.png"
   }
 ]
