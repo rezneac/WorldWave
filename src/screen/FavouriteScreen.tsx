@@ -67,6 +67,7 @@ const FavouriteScreen = () => {
           renderItem={({item, index}) => {
             return (
               <TouchableOpacity
+                style={styles.stationContainer}
                 onPress={() =>
                   manageSound(
                     filteredStations[index].url,
@@ -93,6 +94,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
+  },
+  stationContainer: {
+    flex: 1,
+    alignItems: 'flex-start',
   },
   radioStationView: {
     margin: 10,

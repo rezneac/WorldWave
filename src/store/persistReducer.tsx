@@ -1,3 +1,6 @@
+import { ExtendedTheme } from '@react-navigation/native';
+import getThemePallete from '../components/UI/Theme/ThemePicker';
+
 // Define the types for the state and actions
 interface Station {
   imageUri: string;
@@ -6,6 +9,7 @@ interface Station {
 
 interface AppState {
   stations: Station[];
+  appTheme: ExtendedTheme;
 }
 
 // Define action types
@@ -20,12 +24,21 @@ interface ExcludeStationAction {
   stationIndex: number;
 }
 
+interface UpdateThemeAction {
+  type: 'UPDATE_THEME';
+  newTheme: ExtendedTheme;
+}
+
 // Union type for all possible actions
-type AppAction = AddStationAction | ExcludeStationAction;
+type AppAction = AddStationAction | ExcludeStationAction | UpdateThemeAction;
+
+//Get default light theme
+const lightTheme = getThemePallete('lightTheme');
 
 // Set the initial state
 const initialState: AppState = {
   stations: [],
+  appTheme: lightTheme,
 };
 
 // Define the reducer with types
@@ -50,6 +63,11 @@ const reducer = (state: AppState = initialState, action: AppAction): AppState =>
       return {
         ...state,
         stations: updatedListStations,
+      };
+    case 'UPDATE_THEME':
+      return {
+        ...state,
+        appTheme: action.newTheme,
       };
     default:
       return state;

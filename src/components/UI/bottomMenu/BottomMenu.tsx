@@ -1,14 +1,23 @@
 import {useState, useEffect} from 'react';
 import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
-import {PlayerManager} from '../playerManagePlayback/PlayerManager';
+import {PlayerManager} from '../../playerManagePlayback/PlayerManager';
 import Icon from 'react-native-vector-icons/Entypo';
-import store from '../../store/store';
+import store from '../../../store/store';
+import TrackPlayer, {State, useTrackPlayerEvents, Event} from 'react-native-track-player';
 
-const PlayerManagerMenu = () => {
+interface iProp {
+  colour: string;
+}
+
+const events = [Event.PlaybackState, Event.PlaybackError];
+
+const PlayerManagerMenu = ({colour}: iProp) => {
   const [trackTitle, setTrackTitle] = useState<null | string>(null);
   const [imageUri, setImageUri] = useState<string>('');
   const [onPlay, setOnPlay] = useState<boolean>(false);
   const {playButton} = PlayerManager();
+
+  const [playerState, setPlayerState] = useState(null);
 
   const updateStateFromStore = () => {
     setImageUri(store.getState().imageUri);
@@ -16,19 +25,24 @@ const PlayerManagerMenu = () => {
     setOnPlay(store.getState().isPlaying);
   };
 
-  useEffect(() => {
-    const unsubscribe = store.subscribe(updateStateFromStore);
-    return () => {
-      unsubscribe();
-    };
-  }, []);
+  useTrackPlayerEvents(events, (event: any) => {
+    if (event.type === Event.PlaybackError) {
+      console.warn('An error occured while playing the current track.');
+    }
+    if (event.type === Event.PlaybackState) {
+      setPlayerState(event.state);
+      updateStateFromStore();
+    }
+  });
+
+  const isPlaying = playerState === State.Playing;
 
   const onPressed = async () => {
     await playButton(onPlay);
   };
 
   return trackTitle != null ? (
-    <View style={styles.container}>
+    <View style={[styles.container, {backgroundColor: colour}]}>
       <Image style={styles.image} source={{uri: imageUri!}} />
       <View style={styles.trackInfo}>
         <Text style={styles.text} ellipsizeMode="middle">
@@ -36,20 +50,10 @@ const PlayerManagerMenu = () => {
         </Text>
       </View>
       <TouchableOpacity onPress={onPressed}>
-        {onPlay ? (
-          <Icon
-            style={styles.icon}
-            name="controller-paus"
-            size={53}
-            color="white"
-          />
+        {isPlaying ? (
+          <Icon style={styles.icon} name="controller-paus" size={53} color="white" />
         ) : (
-          <Icon
-            style={styles.icon}
-            name="controller-play"
-            size={53}
-            color="white"
-          />
+          <Icon style={styles.icon} name="controller-play" size={53} color="white" />
         )}
       </TouchableOpacity>
     </View>
@@ -62,7 +66,6 @@ const styles = StyleSheet.create({
   container: {
     width: '100%',
     height: 75,
-    backgroundColor: '#344051',
     flexDirection: 'row',
   },
   image: {

@@ -2,8 +2,10 @@ import {Pressable, StyleSheet, Text, TouchableOpacity, View} from 'react-native'
 import ContextMenu from '../components/UI/ContextMenuPopUp';
 import {useState} from 'react';
 import {version} from '../../package.json';
+import {useTheme} from '@react-navigation/native';
 
-const SettingsScreen = () => {
+const SettingsScreen = (props: any) => {
+  const theme = useTheme().colors;
   const [positionPressed, setPositionPressed] = useState({x: 0, y: 0});
   const [display, setDisplay] = useState(false);
 
@@ -16,27 +18,33 @@ const SettingsScreen = () => {
 
     setPositionPressed({x: pageX, y: pageY});
 
-    // setDisplay(true);
+    setDisplay(true);
   };
 
   return (
     <View style={styles.containerSettings}>
-      <View style={styles.versionContent}>
-        <Text style={styles.titleSettingContent}>Version</Text>
-        <Text style={styles.infoSettingContent}>{version}</Text>
+      <View style={[styles.versionContent, {backgroundColor: theme.primary}]}>
+        <Text style={[styles.titleSettingContent, {color: theme.text}]}>Version</Text>
+        <Text style={[styles.infoSettingContent, {color: theme.subtext}]}>{version}</Text>
       </View>
 
-      {/* TODO:Finish after finishing logic with select languages */}
-      {/* <Pressable onPress={handleLongPress}>
-        <View style={styles.versionContent}>
+      <Pressable onPress={handleLongPress}>
+        <View style={[styles.versionContent, {backgroundColor: theme.primary}]}>
           <View style={styles.selectLanguage}>
-            <Text style={styles.titleSettingContent}>Select your language</Text>
-            <Text style={styles.titleSettingContent}>(Unavailabe for now)</Text>
+            <Text style={[styles.titleSettingContent, {color: theme.text}]}>Select app theme</Text>
           </View>
         </View>
-      </Pressable> */}
+      </Pressable>
 
-      {display && <ContextMenu position={positionPressed} onDisplay={onDisplayHandler} contextProp={undefined} />}
+      {display && (
+        <ContextMenu
+          position={positionPressed}
+          onDisplay={onDisplayHandler}
+          contextProp={['Gray theme', 'Light blue', 'Chocolate', 'Black theme']}
+          colour={theme.primary}
+          textColor={theme.text}
+        />
+      )}
     </View>
   );
 };
@@ -58,9 +66,9 @@ const styles = StyleSheet.create({
     height: 57,
     marginTop: 28,
     borderRadius: 20,
-    backgroundColor: '#596673',
+    backgroundColor: '#fff',
     paddingHorizontal: 20,
-    elevation: 5,
+    // elevation: 5,
   },
   titleSettingContent: {
     color: '#1D212D',

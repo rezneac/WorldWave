@@ -1,9 +1,25 @@
 import {Pressable, StyleSheet, Text, View} from 'react-native';
-import SettingsSVG from '../../../icons/sliders-solid.svg';
+import {SettingsSVG} from '../../../icons/sliders-solid';
 import {HeartSVG} from '../../../icons/heart-solid';
-import RadioSVG from '../../../icons/radio-solid.svg';
+import {RadioSVG} from '../../../icons/radio-solid';
+import {store, persistor} from '../../../store/persistStore';
+import {useTheme} from '@react-navigation/native';
+import React from 'react';
 
-const CustomBottomBar = ({state, descriptors, navigation}: any) => {
+const CustomBottomBar = ({state, descriptors, navigation, onFocus, baseColor}: any) => {
+  const [currentTheme, setCurrentTheme] = React.useState(store.getState().appTheme);
+
+  //Updates to change the color for  the TopBar
+  React.useEffect(() => {
+    const unsubscribe = store.subscribe(() => {
+      // Update the theme in the state when the store changes
+      setCurrentTheme(store.getState().appTheme);
+    });
+
+    // Cleanup subscription when the component unmounts
+    return () => unsubscribe();
+  }, []);
+
   const getIcon = (label: string, fill: string) => {
     switch (label) {
       case 'MainScreen':
@@ -24,7 +40,7 @@ const CustomBottomBar = ({state, descriptors, navigation}: any) => {
   };
 
   return (
-    <View style={styles.tabContainer}>
+    <View style={[styles.tabContainer, {backgroundColor: useTheme().colors.topBar}]}>
       {state.routes.map((route: any, index: any) => {
         const {options} = descriptors[route.key];
         const label =
@@ -52,8 +68,8 @@ const CustomBottomBar = ({state, descriptors, navigation}: any) => {
         return (
           <View style={styles.tabItem} key={index}>
             <Pressable onPress={onPressHandler} style={[{alignItems: 'center'}]}>
-              {getIcon(label, isFocused ? '#ffffff' : '#000')}
-              <Text style={[styles.textLabel, isFocused ? {color: '#fff'} : {color: '#000'}]}>
+              {getIcon(label, isFocused ? currentTheme.colors.highlight : currentTheme.colors.tertiary)}
+              <Text style={[styles.textLabel, isFocused ? {color: '#fff'} : {color: currentTheme.colors.tertiary}]}>
                 {screenNames[label]}
               </Text>
             </Pressable>
@@ -66,7 +82,6 @@ const CustomBottomBar = ({state, descriptors, navigation}: any) => {
 
 const styles = StyleSheet.create({
   tabContainer: {
-    backgroundColor: '#596673',
     flexDirection: 'row',
     height: 60,
   },
